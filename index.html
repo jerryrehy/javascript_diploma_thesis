@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='cs'>  
+    <head>    
+        <title>Grafický editor číslicových obvodů v HTML5</title>    
+        <meta charset='utf-8'>    
+        <meta name='description' content=''>    
+        <meta name='keywords' content=''>    
+        <meta name='author' content=''>    
+        <meta name='robots' content='all'>
+        <link href="style.css" rel="stylesheet">
+        <link href="scripts/joint.css" rel="stylesheet">                       
+        <!-- <link href='/favicon.png' rel='shortcut icon' type='image/png'> -->
+        <script src="scripts/fileLoader.js"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/joint.js"></script>
+        <script src="scripts/joint.shapes.mylib.js"></script>
+
+        
+    </head>  
+    <body onLoad="fill_vars();kontrola();">
+        <div id="options">
+            <form id="radiatory">                
+                <div id="tlac">    
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="wires" checked="checked">Vstupy a výstupy
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="bas_com">Základní kombinační
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="adv_com">Komplexní kombinační
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="ari">Aritmetika
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="bas_seq">Základní sekvenční
+                    <input onClick="zmen_seznam();" type="radio" name="gr1" value="adv_seq">Komplexní sekvenční
+                    <div id="div1">Pro import vlož sem</div>
+                </div>  
+                <div id="rest">               
+                    <select id="prvky" name="prvky"></select>    
+                    <input type="button" name="Pridej" id="proved" value="Přidej" onclick="pridej();">
+                    <a href="lib.vhd" download>Knihovna lib.vhd</a>
+                    <a href="" onclick="save(this, 'tb', tb_sem());">TestBench</a>
+                    <a href="" onclick="save(this, 'exp',obsah_sem());">Export</a>
+                    <a href="" onclick="doIt()">ExportIE</a>
+                </div>                      
+            </form>        
+        </div>
+        <div id="headline">
+            <div id="nazvy">
+                <span>Název entity: <input id="en_name" class="en_name" type="text"></span>
+                <span>Název architektury: <input id="arch_name" class="arch_name" type="text"></span>
+            </div>
+            <div id="nadpis">
+                <span>Grafický editor číslicových obvodů v HTML5</span>   
+            </div>
+        </div>
+        <div id="moje_platno"></div>
+        <footer>
+            <span>©opyright 2013</span>
+            <br>
+            <span>Jaroslav Řehák (TUL - ITE, NM, IT)</span>
+        </footer>
+    <script src="scripts/main.js"></script>
+    </body>
+</html>

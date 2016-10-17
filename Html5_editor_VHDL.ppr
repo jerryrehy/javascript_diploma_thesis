@@ -1,0 +1,45 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+Html5_editor_VHDL
+	+Main
+		index.html
+		style.css
+		seznam_prvku.txt
+		lib.vhd
+		test_circuit.vhd
+		tb_template.vhd
+		tb_template_test.vhd
+		steps.txt
+	+Scripts
+		scripts\main.js
+		scripts\joint.js
+		scripts\joint.css
+		scripts\jquery.js
+		scripts\fileLoader.js
+		scripts\joint.shapes.mylib.js
+[Open project files]
+0=scripts\main.js
+1=index.html
+2=style.css
+[Selected Project Files]
+Main=
+Selected=scripts\main.js
+[scripts\main.js]
+TopLine=491
+Caret=196,512
+[index.html]
+TopLine=23
+Caret=46,38
+[style.css]
+TopLine=1
+Caret=2,121

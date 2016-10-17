@@ -1,0 +1,121 @@
+html{
+    background-color: rgb(153,204,255);
+}
+
+body{
+    margin: 0 0 0 0;
+    display:block;
+    background-color: rgb(153,204,255);
+}
+
+#options{
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    min-height: 60px;
+    min-width: 1200px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+#radiatory{
+    min-height: 60px;
+    min-width: 1200px;
+    border: 2px groove rgb(127,176,176);
+}
+
+#tlac{
+    margin-top: 5px;
+    min-width: 1200px;    
+}
+
+#rest{
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+#rest select{
+    margin-left: 5px;
+    width: 120px; 
+}
+
+#rest input{
+    width: 100px;
+}
+
+#rest a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px dashed black;
+    width: 140px;
+    height: 20px;
+    text-align: center;
+    float: right;
+    margin-right: 2px;
+                 
+}
+
+#rest a:hover{
+    background-color: black;
+    color: white;
+}
+
+#div1 {
+    display: block;
+    float: right;
+    text-align: center;
+    margin-right: 5px;
+    width: 284px;     
+    height: 20px;
+    font-family: 'Trebuchet MS';
+    border: 1px dashed black;
+}
+
+#headline{
+    padding-top: 5px;
+    min-height: 45px;
+    min-width: 1250px;
+    margin-left: 0px;
+    margin-right: auto;
+    position: relative;
+    background-color: rgb(127,176,176);
+}
+
+#nazvy{
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+}
+
+#nadpis{
+    position: relative;
+    float: right;
+    display: inline;
+    min-width: 620px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+#moje_platno{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    min-width: 100%;
+    background-color: rgb(230,230,230);
+    overflow: auto;
+}
+
+footer{
+    background-color: rgb(127,176,176);
+    padding-left: 5px;
+    position: relative;
+    text-align: left;    
+}
